@@ -1,16 +1,24 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove_P1 : MonoBehaviour
+public class PlayerMoveP1 : MonoBehaviour
 {
+    //movement
     public float moveSpeed;
     public float jumpForce;
 
     private Rigidbody2D rb;
-    private SpriteRenderer sprite;
+
+    bool jump = false;
 
     Animator animator;
+
+    //attack point
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+
+    public LayerMask enemyLayers;
 
     // Start is called before the first frame update
     void Start()
@@ -28,72 +36,86 @@ public class PlayerMove_P1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow) && rb.velocity.y == 0)
+        if (Input.GetKeyDown(KeyCode.W) && rb.velocity.y == 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce); 
             animator.SetTrigger("Jump"); // Set trang thai nhay
         }
-        if (rb.velocity.y < 0)
+        if (rb.velocity.y < 0) 
         {
             animator.SetInteger("State", 3); // Set trang thai roi
         }
 
         // Movement to the right
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             if (transform.localScale.x < 0)
             {
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+
+            animator.SetInteger("State", 1); // set trang thai chay 
+
         }
         // Movement to the left
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.A))
         {
             if (transform.localScale.x > 0)
             {
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+
+            animator.SetInteger("State", 1);// set trang thai chay 
+
         }
         // Stop moving
         else
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
             animator.SetInteger("State", 0);
-
+            
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad1)) // danh thuong
+        if (Input.GetKeyDown(KeyCode.J)) // danh thuong
         {
-            animator.SetTrigger("Attack1");
+            animator.SetTrigger("Attack1"); 
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad5)) // Su dung Ultimate
+        if (Input.GetKey(KeyCode.S)) // block
         {
-            animator.SetTrigger("Ulti");
+            animator.SetTrigger("Block");
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad2)) // Skill 1
+        if (Input.GetKeyDown(KeyCode.I)) // Su dung Ultimate
         {
-            animator.SetTrigger("Skill1");
+            animator.SetTrigger("Ulti"); 
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad4)) // Combo Attack
+        if (Input.GetKeyDown(KeyCode.K)) // Skill 1
+        {
+            animator.SetTrigger("Skill1"); 
+        }
+
+        if (Input.GetKeyDown(KeyCode.U)) // Combo Attack
         {
             animator.SetTrigger("Combo");
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad3)) // Ban Xa
+        if (Input.GetKeyDown(KeyCode.L)) // Ban Xa
         {
-            animator.SetTrigger("Bullet");
+            animator.SetTrigger("Bullet"); 
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad6)) // Skill 3
+        if (Input.GetKeyDown(KeyCode.O)) // Skill 3
         {
             animator.SetTrigger("Skill3");
         }
+    }
+
+    void Attack()
+    {
+
     }
 }

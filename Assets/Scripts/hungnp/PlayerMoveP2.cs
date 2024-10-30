@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove_P1 : MonoBehaviour
+public class PlayerMoveP2 : MonoBehaviour
 {
     public float moveSpeed;
     public float jumpForce;
@@ -46,7 +46,9 @@ public class PlayerMove_P1 : MonoBehaviour
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+
+            animator.SetInteger("State", 1); // set trang thai chay 
+
         }
         // Movement to the left
         else if (Input.GetKey(KeyCode.LeftArrow))
@@ -56,7 +58,9 @@ public class PlayerMove_P1 : MonoBehaviour
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+
+            animator.SetInteger("State", 1);// set trang thai chay 
+
         }
         // Stop moving
         else
@@ -69,6 +73,11 @@ public class PlayerMove_P1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Keypad1)) // danh thuong
         {
             animator.SetTrigger("Attack1");
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow)) // block
+        {
+            animator.SetTrigger("Block");
         }
 
         if (Input.GetKeyDown(KeyCode.Keypad5)) // Su dung Ultimate

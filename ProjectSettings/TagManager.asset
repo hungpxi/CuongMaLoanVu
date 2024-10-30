@@ -4,6 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - P2
   - P1
   - P4
   - P3
@@ -18,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
