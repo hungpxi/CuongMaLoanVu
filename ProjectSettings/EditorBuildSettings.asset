@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Hoang/Map1.unity
+    guid: bccc11c1fd51b094797e77f6737de72b
+  - enabled: 1
+    path: Assets/Hoang/Map2.unity
+    guid: d40a46865a6f19144878ad7ae5ab1808
+  - enabled: 1
+    path: Assets/Hoang/Map3.unity
+    guid: bd14a900eddb5ce48863939d606ad844
+  - enabled: 1
+    path: Assets/Hoang/Map4.unity
+    guid: a5573035c1832a44b8a0fb6e0b8556fe
+  - enabled: 1
+    path: Assets/Hoang/MapSelection.unity
+    guid: 3b023ea3471f64d4d9816e8e09cf97a7
   m_configObjects: {}
