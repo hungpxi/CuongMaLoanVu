@@ -2,136 +2,127 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P1_Script : MonoBehaviour
+public class PlayerMoveP1 : MonoBehaviour
 {
-    [SerializeField]
-    float forceX, forceY;
-    Rigidbody2D rigit;
+    public float moveSpeed;
+    public float jumpForce;
 
+    private Rigidbody2D rb;
+    private SpriteRenderer sprite;
+    private DragonAttack dragonAttack; // Tham chiếu tới chiêu thức rồng của nhân vật
     Animator animator;
 
-    [SerializeField] private float attackCooldown;
-    [SerializeField] private Transform boomPoint;
-    [SerializeField] private GameObject[] Boommerangs;
-    private float cooldownTimer = Mathf.Infinity;
-
-    void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
-        rigit = gameObject.GetComponent<Rigidbody2D>();
-        animator = gameObject.GetComponent<Animator>();
-        animator.SetInteger("StateIndex", 0);
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        dragonAttack = GetComponent<DragonAttack>();
+    }
+
+    public void Awake()
+    {
+
+        animator = GetComponent<Animator>();
+        // Set initial state to Idle
+        animator.SetInteger("State", 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        // Kiểm tra trạng thái nhảy trước tiên để ưu tiên nhảy khi có phím nhấn
-        if (Input.GetKeyDown(KeyCode.UpArrow) && rigit.velocity.y == 0)
+        if (Input.GetKeyDown(KeyCode.W) && rb.velocity.y == 0)
         {
-            rigit.velocity = new Vector2(rigit.velocity.x, forceY); // Tạo vận tốc nhảy lên
-            animator.SetInteger("StateIndex", 1); // Set trạng thái nhảy lên
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            animator.SetTrigger("Jump"); // Set trang thai nhay
         }
-        // Kiểm tra trạng thái rơi
-        else if (rigit.velocity.y < 0) // Nếu vận tốc dọc âm (nhân vật đang rơi)
+        if (rb.velocity.y < 0)
         {
-            animator.SetInteger("StateIndex", 3); // Set trạng thái rơi
-        }
-        // Di chuyển sang phải
-        else if (Input.GetKey(KeyCode.RightArrow) && rigit.velocity.y == 0)
-        {
-            transform.localScale = new Vector3(
-                Mathf.Abs(transform.localScale.x),
-                transform.localScale.y,
-                transform.localScale.z
-            );
-            rigit.velocity = new Vector2(forceX, rigit.velocity.y); // Di chuyển với vận tốc forceX
-            animator.SetInteger("StateIndex", 2); // Set trạng thái chạy
-        }
-        // Di chuyển sang trái
-        else if (Input.GetKey(KeyCode.LeftArrow) && rigit.velocity.y == 0)
-        {
-            transform.localScale = new Vector3(
-                -Mathf.Abs(transform.localScale.x),
-                transform.localScale.y,
-                transform.localScale.z
-            );
-            rigit.velocity = new Vector2(-forceX, rigit.velocity.y); // Di chuyển với vận tốc -forceX
-            animator.SetInteger("StateIndex", 2); // Set trạng thái chạy
-        }
-        // Đứng yên nếu không có vận tốc và không nhấn phím nào
-        else if (rigit.velocity.x == 0 && rigit.velocity.y == 0)
-        {
-            animator.SetInteger("StateIndex", 0); // Trạng thái đứng yên
+            animator.SetInteger("State", 3); // Set trang thai roi
         }
 
-
-        if (Input.GetKeyDown(KeyCode.J)) // Đánh thường
+        // Movement to the right
+        if (Input.GetKey(KeyCode.D))
         {
-            animator.SetTrigger("Combo1"); // Kích hoạt trigger Attack
+            if (transform.localScale.x < 0)
+            {
+                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+            rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+            animator.SetTrigger("Run");
+        }
+        // Movement to the left
+        else if (Input.GetKey(KeyCode.A))
+        {
+            if (transform.localScale.x > 0)
+            {
+                transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            }
+            rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
+            animator.SetTrigger("Run");
+        }
+        // Stop moving
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+            animator.SetInteger("State", 0);
+
         }
 
-        if (Input.GetKeyDown(KeyCode.I)) // Sử dụng Ultimate
+        if (Input.GetKeyDown(KeyCode.J)) // danh thuong
         {
-            animator.SetTrigger("Special"); // Kích hoạt trigger Ultimate
+            animator.SetTrigger("Attack1");
         }
 
-        if (Input.GetKeyDown(KeyCode.O)) // Combo 2
+        if (Input.GetKeyDown(KeyCode.I)) // Su dung Ultimate
         {
-            animator.SetTrigger("Combo3"); // Kích hoạt trigger Combo2
+            
+            animator.SetTrigger("Ulti");
+            dragonAttack.Activate();
         }
 
-
-
-
-
-
-
-
-
-        cooldownTimer += Time.deltaTime;
-        if (Input.GetKey(KeyCode.A) && cooldownTimer > attackCooldown)
+        if (Input.GetKeyDown(KeyCode.K)) // Skill 1
         {
-            animator.SetInteger("StateIndex", 4);
-            //Attack();
-
-            cooldownTimer = 0;
-            Boommerangs[FindBoomerang()].transform.position = boomPoint.position;
-           // Boommerangs[FindBoomerang()].GetComponent<Bummerang1>().SetDirection(Mathf.Sign(transform.localScale.x));
-
+            animator.SetTrigger("Skill1");
         }
-        //private void OnCollisionEnter2D(Collision2D collision)
+
+        if (Input.GetKeyDown(KeyCode.U)) // Combo Attack
+        {
+            animator.SetTrigger("Combo");
+        }
+
+        if (Input.GetKeyDown(KeyCode.L)) // Ban Xa
+        {
+            animator.SetTrigger("Bullet");
+        }
+
+        if (Input.GetKeyDown(KeyCode.O)) // Skill 3
+        {
+            animator.SetTrigger("Skill3");
+        }
+
+        
+        //cooldownTimer += Time.deltaTime;
+        //if (Input.GetKey(KeyCode.A) && cooldownTimer > attackCooldown)
         //{
-        //    if (collision.gameObject.CompareTag("enemy"))
-        //        animator.SetInteger("StateIndex", 4);
+        //    animator.SetInteger("StateIndex", 4);
+        //    //Attack();
+
+        //    cooldownTimer = 0;
+        //    Boommerangs[FindBoomerang()].transform.position = boomPoint.position;
+        //    // Boommerangs[FindBoomerang()].GetComponent<Bummerang1>().SetDirection(Mathf.Sign(transform.localScale.x));
+
         //}
     }
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("dragon"))
-    //    {
 
-    //        // Chuyển sang animation HitDame
-    //        animator.SetTrigger("HitDame");
-    //    }
-    //}
-
-    //private void Attack()
-    //{
-    //    animator.SetTrigger("Attack");
-    //    cooldownTimer = 0;
-
-
-    //    Boommerangs[FindBoomerang()].transform.position = boomPoint.position;
-    //    Boommerangs[FindBoomerang()].GetComponent<Bummerang1>().SetDirection(Mathf.Sign(transform.localScale.x));
-    //}
-    private int FindBoomerang()
-    {
-        for (int i = 0; i < Boommerangs.Length; i++)
-        {
-            if (!Boommerangs[i].activeInHierarchy)
-                return i;
-        }
-        return 0;
-    }
 }
+
+//private int FindBoomerang()
+//{
+//    for (int i = 0; i < Boommerangs.Length; i++)
+//    {
+//        if (!Boommerangs[i].activeInHierarchy)
+//            return i;
+//    }
+//    return 0;
+//}
+
