@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4730592367306445807}
   - component: {fileID: 3675311886902321108}
   - component: {fileID: 1878233360992252228}
-  - component: {fileID: 5573570415446633489}
+  - component: {fileID: 5129454722713093623}
   m_Layer: 6
   m_Name: Viking
   m_TagString: P1
@@ -215,7 +215,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21896952, y: 0.47316507}
   m_EdgeRadius: 0
---- !u!114 &5573570415446633489
+--- !u!114 &5129454722713093623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,16 +224,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2939530744752404530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b096743a44b45d448214d39c82886ed, type: 3}
+  m_Script: {fileID: 11500000, guid: a18b16a9445bfeb43ac9157b08a432d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  jumpForce: 30
-  attackPoint: {fileID: 0}
-  attackRange: 0.5
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 0
+  jumpForce: 10
 --- !u!1 &6574383148132009703
 GameObject:
   m_ObjectHideFlags: 0

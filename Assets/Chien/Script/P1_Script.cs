@@ -20,7 +20,6 @@ public class PlayerMove_P1 : MonoBehaviour
     }
 
     public void Awake()
-
     {
 
         animator = GetComponent<Animator>();
