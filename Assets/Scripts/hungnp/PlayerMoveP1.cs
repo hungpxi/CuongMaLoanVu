@@ -10,6 +10,8 @@ public class PlayerMoveP1 : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
 
+    bool jump = false;
+
     Animator animator;
 
     // Start is called before the first frame update
@@ -46,7 +48,9 @@ public class PlayerMoveP1 : MonoBehaviour
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+
+            animator.SetInteger("State", 1); // set trang thai chay 
+
         }
         // Movement to the left
         else if (Input.GetKey(KeyCode.A))
@@ -56,7 +60,9 @@ public class PlayerMoveP1 : MonoBehaviour
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+
+            animator.SetInteger("State", 1);// set trang thai chay 
+
         }
         // Stop moving
         else
@@ -69,6 +75,11 @@ public class PlayerMoveP1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J)) // danh thuong
         {
             animator.SetTrigger("Attack1"); 
+        }
+
+        if (Input.GetKey(KeyCode.S)) // block
+        {
+            animator.SetTrigger("Block");
         }
 
         if (Input.GetKeyDown(KeyCode.I)) // Su dung Ultimate
