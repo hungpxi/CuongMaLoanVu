@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class PlayerMoveP1 : MonoBehaviour
 {
+    //movement
     public float moveSpeed;
     public float jumpForce;
 
     private Rigidbody2D rb;
-    private SpriteRenderer sprite;
 
     bool jump = false;
 
     Animator animator;
+
+    //attack point
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+
+    public LayerMask enemyLayers;
 
     // Start is called before the first frame update
     void Start()
@@ -106,5 +112,10 @@ public class PlayerMoveP1 : MonoBehaviour
         {
             animator.SetTrigger("Skill3");
         }
+    }
+
+    void Attack()
+    {
+
     }
 }
