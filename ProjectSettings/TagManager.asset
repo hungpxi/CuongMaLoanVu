@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - P1
+  - P4
+  - P3
+  - Health1
+  - Health2
+  - Rage
+  - Mana
   layers:
   - Default
   - TransparentFX
