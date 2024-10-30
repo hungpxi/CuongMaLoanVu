@@ -242,4 +242,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragonPrefab: {fileID: 3141681443966778308, guid: 6468172c0cf42ac48a0e527c1b5d6422, type: 3}
   firePoint: {fileID: 8490719298811973894}
-  dragonLifeTime: 5
+  dragonLifeTime: 10

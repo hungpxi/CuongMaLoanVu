@@ -352,10 +352,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 36676655612869125, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1151231221356724569, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
       propertyPath: m_Name
       value: P1
@@ -363,10 +359,6 @@ PrefabInstance:
     - target: {fileID: 1151231221356724569, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4545248708908668860, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
-      propertyPath: dragonLifeTime
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4738502122758795462, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
       propertyPath: m_LocalPosition.x

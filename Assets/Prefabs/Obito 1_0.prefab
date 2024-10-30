@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 4261449946876721918}
   - component: {fileID: 1215058151965069684}
   - component: {fileID: 8140126082574936261}
-  - component: {fileID: 7674907025329926208}
   - component: {fileID: 8937336307077943297}
   - component: {fileID: 8885119961035217527}
-  - component: {fileID: 2420679512624925915}
+  - component: {fileID: 1060465852970334684}
   m_Layer: 0
   m_Name: Obito 1_0
   m_TagString: Player
@@ -156,21 +155,6 @@ MonoBehaviour:
   canattack: 0
   audio_S: {fileID: 0}
   audioClips: []
---- !u!114 &7674907025329926208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4261449946876721917}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94158a49c53da044db98955ce41384b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpForce: 10
-  playerHealth: {fileID: 8937336307077943297}
 --- !u!114 &8937336307077943297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +218,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.722359}
   m_EdgeRadius: 0
---- !u!114 &2420679512624925915
+--- !u!114 &1060465852970334684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
