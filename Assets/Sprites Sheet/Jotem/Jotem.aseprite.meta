@@ -21,11 +21,13 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 0
     streamingMipmapsPriority: 0
     vTOnly: 0
-    ignoreMasterTextureLimit: 0
+    ignoreMipmapLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -2068,7 +2070,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_20
+    - name: Jotem_Frame_20
       frameIndex: 20
       additiveSortOrder: 0
       cellRect:
@@ -2077,7 +2079,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: f85384d50a0cdfe4da03542bc99bfcda
-    - name: Frame_21
+    - name: Jotem_Frame_21
       frameIndex: 21
       additiveSortOrder: 0
       cellRect:
@@ -2086,7 +2088,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 399c3143804d59b42b9411a4bcc23510
-    - name: Frame_22
+    - name: Jotem_Frame_22
       frameIndex: 22
       additiveSortOrder: 0
       cellRect:
@@ -2095,7 +2097,7 @@ ScriptedImporter:
         width: 48
         height: 35
       spriteId: a09920b8716a1a64cb34be1d7f961554
-    - name: Frame_23
+    - name: Jotem_Frame_23
       frameIndex: 23
       additiveSortOrder: 0
       cellRect:
@@ -2104,7 +2106,7 @@ ScriptedImporter:
         width: 48
         height: 35
       spriteId: 8d755c90feb883d4eaaf9c137422de04
-    - name: Frame_24
+    - name: Jotem_Frame_24
       frameIndex: 24
       additiveSortOrder: 0
       cellRect:
@@ -2113,7 +2115,7 @@ ScriptedImporter:
         width: 48
         height: 36
       spriteId: 0a6272c44caf6944fa28c6ce8b85d89f
-    - name: Frame_25
+    - name: Jotem_Frame_25
       frameIndex: 25
       additiveSortOrder: 0
       cellRect:
@@ -2122,7 +2124,7 @@ ScriptedImporter:
         width: 48
         height: 36
       spriteId: fb6a23df9f7104940860bbd84ab84ce7
-    - name: Frame_26
+    - name: Jotem_Frame_26
       frameIndex: 26
       additiveSortOrder: 0
       cellRect:
@@ -2131,7 +2133,7 @@ ScriptedImporter:
         width: 48
         height: 35
       spriteId: 81d7e75bb93024346897b96ba9567e9e
-    - name: Frame_27
+    - name: Jotem_Frame_27
       frameIndex: 27
       additiveSortOrder: 0
       cellRect:
@@ -2140,7 +2142,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 8902ea042748ffa4c9e0cb890592293d
-    - name: Frame_28
+    - name: Jotem_Frame_28
       frameIndex: 28
       additiveSortOrder: 0
       cellRect:
@@ -2149,7 +2151,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 0430d8b8e783fbc46be351344e8fd4e7
-    - name: Frame_29
+    - name: Jotem_Frame_29
       frameIndex: 29
       additiveSortOrder: 0
       cellRect:
@@ -2158,7 +2160,7 @@ ScriptedImporter:
         width: 48
         height: 35
       spriteId: b281be83afecd8e468eab049ef485ce4
-    - name: Frame_30
+    - name: Jotem_Frame_30
       frameIndex: 30
       additiveSortOrder: 0
       cellRect:
@@ -2167,7 +2169,7 @@ ScriptedImporter:
         width: 48
         height: 35
       spriteId: 343f1d4a8d6136b4b94d401a66cf68dd
-    - name: Frame_31
+    - name: Jotem_Frame_31
       frameIndex: 31
       additiveSortOrder: 0
       cellRect:
@@ -2176,7 +2178,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 0ce168a4bba0d3041a60080719213d8c
-    - name: Frame_32
+    - name: Jotem_Frame_32
       frameIndex: 32
       additiveSortOrder: 0
       cellRect:
@@ -2185,7 +2187,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 79fbc1f0fc604f54eb1db59bad9a67ef
-    - name: Frame_33
+    - name: Jotem_Frame_33
       frameIndex: 33
       additiveSortOrder: 0
       cellRect:
@@ -2194,7 +2196,7 @@ ScriptedImporter:
         width: 48
         height: 35
       spriteId: 8545084967ba72c45a9a2b92a62e7680
-    - name: Frame_34
+    - name: Jotem_Frame_34
       frameIndex: 34
       additiveSortOrder: 0
       cellRect:
@@ -2203,7 +2205,7 @@ ScriptedImporter:
         width: 47
         height: 36
       spriteId: 56bccb99419c9834ca94a202fd30b6db
-    - name: Frame_35
+    - name: Jotem_Frame_35
       frameIndex: 35
       additiveSortOrder: 0
       cellRect:
@@ -2212,7 +2214,7 @@ ScriptedImporter:
         width: 47
         height: 36
       spriteId: 8d55fdc4d9707ec4c9e5f769f448c075
-    - name: Frame_36
+    - name: Jotem_Frame_36
       frameIndex: 36
       additiveSortOrder: 0
       cellRect:
@@ -2221,7 +2223,7 @@ ScriptedImporter:
         width: 47
         height: 36
       spriteId: cef533d4bcf31654bbd05fe13e0c5288
-    - name: Frame_37
+    - name: Jotem_Frame_37
       frameIndex: 37
       additiveSortOrder: 0
       cellRect:
@@ -2230,7 +2232,7 @@ ScriptedImporter:
         width: 48
         height: 38
       spriteId: 47b92d8de5767a04db85628c9ceb5ef5
-    - name: Frame_38
+    - name: Jotem_Frame_38
       frameIndex: 38
       additiveSortOrder: 0
       cellRect:
@@ -2239,7 +2241,7 @@ ScriptedImporter:
         width: 48
         height: 38
       spriteId: f1571830f1713f346aac588eda79aac2
-    - name: Frame_39
+    - name: Jotem_Frame_39
       frameIndex: 39
       additiveSortOrder: 0
       cellRect:
@@ -2248,7 +2250,7 @@ ScriptedImporter:
         width: 48
         height: 38
       spriteId: 36e96c28a97c5c44ca32ab876fbaa776
-    - name: Frame_40
+    - name: Jotem_Frame_40
       frameIndex: 40
       additiveSortOrder: 0
       cellRect:
@@ -2257,7 +2259,7 @@ ScriptedImporter:
         width: 48
         height: 38
       spriteId: 12818c9810c1da7489217591e35262de
-    - name: Frame_41
+    - name: Jotem_Frame_41
       frameIndex: 41
       additiveSortOrder: 0
       cellRect:
@@ -2266,7 +2268,7 @@ ScriptedImporter:
         width: 48
         height: 38
       spriteId: d0bd24240b0f2af4fa79fba9373bb38f
-    - name: Frame_42
+    - name: Jotem_Frame_42
       frameIndex: 42
       additiveSortOrder: 0
       cellRect:
@@ -2275,7 +2277,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: d2ddb085801ea0641a3cbf36e567fa9c
-    - name: Frame_43
+    - name: Jotem_Frame_43
       frameIndex: 43
       additiveSortOrder: 0
       cellRect:
@@ -2284,7 +2286,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 0296910f613dd9f418b821de786b89c7
-    - name: Frame_44
+    - name: Jotem_Frame_44
       frameIndex: 44
       additiveSortOrder: 0
       cellRect:
@@ -2293,7 +2295,7 @@ ScriptedImporter:
         width: 48
         height: 35
       spriteId: ecfa880faa38f3e45a320ceb109a088d
-    - name: Frame_45
+    - name: Jotem_Frame_45
       frameIndex: 45
       additiveSortOrder: 0
       cellRect:
@@ -2302,7 +2304,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 15c9c42ca119d854ba05ce5356fef78b
-    - name: Frame_46
+    - name: Jotem_Frame_46
       frameIndex: 46
       additiveSortOrder: 0
       cellRect:
@@ -2311,7 +2313,7 @@ ScriptedImporter:
         width: 48
         height: 37
       spriteId: 479289aad1ce81a4a8cd28c5a8eb1c4b
-    - name: Frame_47
+    - name: Jotem_Frame_47
       frameIndex: 47
       additiveSortOrder: 0
       cellRect:
@@ -2320,7 +2322,7 @@ ScriptedImporter:
         width: 48
         height: 40
       spriteId: ad32d1429748449418959f6a55c27ac7
-    - name: Frame_48
+    - name: Jotem_Frame_48
       frameIndex: 48
       additiveSortOrder: 0
       cellRect:
@@ -2329,7 +2331,7 @@ ScriptedImporter:
         width: 48
         height: 43
       spriteId: 6ab2ee2e625be964eaa6e559db213dee
-    - name: Frame_49
+    - name: Jotem_Frame_49
       frameIndex: 49
       additiveSortOrder: 0
       cellRect:
@@ -2338,7 +2340,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 510408082c5c9444bac7dc022f088b4a
-    - name: Frame_50
+    - name: Jotem_Frame_50
       frameIndex: 50
       additiveSortOrder: 0
       cellRect:
@@ -2347,7 +2349,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: e1a8a3ea772a58a41b6f1b1fffc8f5f9
-    - name: Frame_51
+    - name: Jotem_Frame_51
       frameIndex: 51
       additiveSortOrder: 0
       cellRect:
@@ -2356,7 +2358,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 3997dbdb731f36b44b25fe8032d64277
-    - name: Frame_52
+    - name: Jotem_Frame_52
       frameIndex: 52
       additiveSortOrder: 0
       cellRect:
@@ -2365,7 +2367,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 9abf372f6ade53c42b514a3ad6de4d5a
-    - name: Frame_53
+    - name: Jotem_Frame_53
       frameIndex: 53
       additiveSortOrder: 0
       cellRect:
@@ -2374,7 +2376,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: fc801f35d6df9374798ddc576ebd7528
-    - name: Frame_54
+    - name: Jotem_Frame_54
       frameIndex: 54
       additiveSortOrder: 0
       cellRect:
@@ -2383,7 +2385,7 @@ ScriptedImporter:
         width: 56
         height: 43
       spriteId: 84db05c317eaf4c49b9b4bb160916b95
-    - name: Frame_60
+    - name: Jotem_Frame_60
       frameIndex: 60
       additiveSortOrder: 0
       cellRect:
@@ -2392,7 +2394,7 @@ ScriptedImporter:
         width: 84
         height: 46
       spriteId: a39d0242de181c14d8757f6fb31dd16e
-    - name: Frame_61
+    - name: Jotem_Frame_61
       frameIndex: 61
       additiveSortOrder: 0
       cellRect:
@@ -2401,7 +2403,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: ba2058c0c20ef7e4d93d45f7f6122693
-    - name: Frame_62
+    - name: Jotem_Frame_62
       frameIndex: 62
       additiveSortOrder: 0
       cellRect:
@@ -2410,7 +2412,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 9ddf666aa1233ff409b7caf6771b39a6
-    - name: Frame_63
+    - name: Jotem_Frame_63
       frameIndex: 63
       additiveSortOrder: 0
       cellRect:
@@ -2419,7 +2421,7 @@ ScriptedImporter:
         width: 48
         height: 35
       spriteId: e19323707ab3ca341a84a47dcff7950f
-    - name: Frame_64
+    - name: Jotem_Frame_64
       frameIndex: 64
       additiveSortOrder: 0
       cellRect:
@@ -2428,7 +2430,7 @@ ScriptedImporter:
         width: 48
         height: 32
       spriteId: 372bf48078467be408725f30ad22d90c
-    - name: Frame_65
+    - name: Jotem_Frame_65
       frameIndex: 65
       additiveSortOrder: 0
       cellRect:
@@ -2437,7 +2439,7 @@ ScriptedImporter:
         width: 48
         height: 31
       spriteId: 06ee109e8bb9fee4d8bfa18fbf499e99
-    - name: Frame_66
+    - name: Jotem_Frame_66
       frameIndex: 66
       additiveSortOrder: 0
       cellRect:
@@ -2446,7 +2448,7 @@ ScriptedImporter:
         width: 48
         height: 32
       spriteId: f522abfc0953b4d4f8cf475f72737fa4
-    - name: Frame_67
+    - name: Jotem_Frame_67
       frameIndex: 67
       additiveSortOrder: 0
       cellRect:
@@ -2455,7 +2457,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: cdc5ec950e41d35459c84362c59a8e6b
-    - name: Frame_68
+    - name: Jotem_Frame_68
       frameIndex: 68
       additiveSortOrder: 0
       cellRect:
@@ -2464,7 +2466,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 1e6886148e8f8b54ea2d52d8ae418d55
-    - name: Frame_69
+    - name: Jotem_Frame_69
       frameIndex: 69
       additiveSortOrder: 0
       cellRect:
@@ -2473,7 +2475,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: e2677f4fb99c51647a18167c05e362c6
-    - name: Frame_70
+    - name: Jotem_Frame_70
       frameIndex: 70
       additiveSortOrder: 0
       cellRect:
@@ -2482,7 +2484,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: d044a05997b8ea84e9c571228e21799c
-    - name: Frame_71
+    - name: Jotem_Frame_71
       frameIndex: 71
       additiveSortOrder: 0
       cellRect:
@@ -2491,7 +2493,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 73c57009dbbf59f459d943c16d49304a
-    - name: Frame_72
+    - name: Jotem_Frame_72
       frameIndex: 72
       additiveSortOrder: 0
       cellRect:
@@ -2500,7 +2502,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 77e1b2f6b3174054cae012f93c7b1e77
-    - name: Frame_73
+    - name: Jotem_Frame_73
       frameIndex: 73
       additiveSortOrder: 0
       cellRect:
@@ -2509,7 +2511,7 @@ ScriptedImporter:
         width: 54
         height: 34
       spriteId: 49bfc48b63212364aad58fb6359ad7dd
-    - name: Frame_74
+    - name: Jotem_Frame_74
       frameIndex: 74
       additiveSortOrder: 0
       cellRect:
@@ -2518,7 +2520,7 @@ ScriptedImporter:
         width: 53
         height: 34
       spriteId: 9f53c114b65dc4d4bb58e1b7b0662ebf
-    - name: Frame_75
+    - name: Jotem_Frame_75
       frameIndex: 75
       additiveSortOrder: 0
       cellRect:
@@ -2527,7 +2529,7 @@ ScriptedImporter:
         width: 53
         height: 34
       spriteId: 4258e3dff3a5f2b4a8b8cc123cb40ccd
-    - name: Frame_76
+    - name: Jotem_Frame_76
       frameIndex: 76
       additiveSortOrder: 0
       cellRect:
@@ -2536,7 +2538,7 @@ ScriptedImporter:
         width: 51
         height: 34
       spriteId: 1d87550eec69ea3488cee73e3a4b288a
-    - name: Frame_77
+    - name: Jotem_Frame_77
       frameIndex: 77
       additiveSortOrder: 0
       cellRect:
@@ -2545,7 +2547,7 @@ ScriptedImporter:
         width: 55
         height: 34
       spriteId: f47cfdf6c828b7b48b960a6887982652
-    - name: Frame_78
+    - name: Jotem_Frame_78
       frameIndex: 78
       additiveSortOrder: 0
       cellRect:
@@ -2554,7 +2556,7 @@ ScriptedImporter:
         width: 64
         height: 34
       spriteId: 7a0f7891d8fa27b4281ca71637aca95a
-    - name: Frame_79
+    - name: Jotem_Frame_79
       frameIndex: 79
       additiveSortOrder: 0
       cellRect:
@@ -2563,7 +2565,7 @@ ScriptedImporter:
         width: 62
         height: 37
       spriteId: 27aca228253994b498168e93eae8c2a6
-    - name: Frame_80
+    - name: Jotem_Frame_80
       frameIndex: 80
       additiveSortOrder: 0
       cellRect:
@@ -2572,7 +2574,7 @@ ScriptedImporter:
         width: 65
         height: 35
       spriteId: c13f003930b7e764c836e4e2e184f271
-    - name: Frame_81
+    - name: Jotem_Frame_81
       frameIndex: 81
       additiveSortOrder: 0
       cellRect:
@@ -2581,7 +2583,7 @@ ScriptedImporter:
         width: 64
         height: 35
       spriteId: 9f246d29bdcc63e4ba1251a152be7b14
-    - name: Frame_82
+    - name: Jotem_Frame_82
       frameIndex: 82
       additiveSortOrder: 0
       cellRect:
@@ -2590,7 +2592,7 @@ ScriptedImporter:
         width: 64
         height: 35
       spriteId: cca30daf7536806408dda1bc16c636bd
-    - name: Frame_83
+    - name: Jotem_Frame_83
       frameIndex: 83
       additiveSortOrder: 0
       cellRect:
@@ -2599,7 +2601,7 @@ ScriptedImporter:
         width: 64
         height: 35
       spriteId: fd63589d26057154e8ff11e4b396587c
-    - name: Frame_84
+    - name: Jotem_Frame_84
       frameIndex: 84
       additiveSortOrder: 0
       cellRect:
@@ -2608,7 +2610,7 @@ ScriptedImporter:
         width: 63
         height: 39
       spriteId: 3566c75b7ef54b74e9e96f662f92c8d9
-    - name: Frame_85
+    - name: Jotem_Frame_85
       frameIndex: 85
       additiveSortOrder: 0
       cellRect:
@@ -2617,7 +2619,7 @@ ScriptedImporter:
         width: 65
         height: 39
       spriteId: ff810b21e00fd5547bab0d3f05cb52e7
-    - name: Frame_86
+    - name: Jotem_Frame_86
       frameIndex: 86
       additiveSortOrder: 0
       cellRect:
@@ -2626,7 +2628,7 @@ ScriptedImporter:
         width: 65
         height: 36
       spriteId: cc4da247c7434d64e853202fc2edb0c4
-    - name: Frame_87
+    - name: Jotem_Frame_87
       frameIndex: 87
       additiveSortOrder: 0
       cellRect:
@@ -2635,7 +2637,7 @@ ScriptedImporter:
         width: 65
         height: 34
       spriteId: b8d44f59ee7f59746af5a6c844923848
-    - name: Frame_88
+    - name: Jotem_Frame_88
       frameIndex: 88
       additiveSortOrder: 0
       cellRect:
@@ -2644,7 +2646,7 @@ ScriptedImporter:
         width: 67
         height: 56
       spriteId: ed12a4b59ed70734a9c1a7d0f2727faf
-    - name: Frame_89
+    - name: Jotem_Frame_89
       frameIndex: 89
       additiveSortOrder: 0
       cellRect:
@@ -2653,7 +2655,7 @@ ScriptedImporter:
         width: 80
         height: 63
       spriteId: 4fd82fa3b7258d140a8cd40456bb3782
-    - name: Frame_90
+    - name: Jotem_Frame_90
       frameIndex: 90
       additiveSortOrder: 0
       cellRect:
@@ -2662,7 +2664,7 @@ ScriptedImporter:
         width: 64
         height: 41
       spriteId: 2da5c89e77e562e41afcaf8235eecca3
-    - name: Frame_91
+    - name: Jotem_Frame_91
       frameIndex: 91
       additiveSortOrder: 0
       cellRect:
@@ -2671,7 +2673,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: 585c57b1696413b4db0d113e5e3dd67a
-    - name: Frame_6
+    - name: Jotem_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -2680,7 +2682,7 @@ ScriptedImporter:
         width: 26
         height: 40
       spriteId: dda7d69fce2a2674f9cecb7fb277ea1b
-    - name: Frame_7
+    - name: Jotem_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -2689,7 +2691,7 @@ ScriptedImporter:
         width: 26
         height: 40
       spriteId: af35d8694dc08034cb8c56e41bb6bc61
-    - name: Frame_8
+    - name: Jotem_Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -2698,7 +2700,7 @@ ScriptedImporter:
         width: 26
         height: 41
       spriteId: 95ff76b13ddb67945b373c0fa51d49f1
-    - name: Frame_9
+    - name: Jotem_Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -2707,7 +2709,7 @@ ScriptedImporter:
         width: 26
         height: 41
       spriteId: 1becf9dbce3d4b145bf74ce87e073960
-    - name: Frame_10
+    - name: Jotem_Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -2716,7 +2718,7 @@ ScriptedImporter:
         width: 26
         height: 41
       spriteId: 6347b5f4f2f43c9498e77d36a2bc217f
-    - name: Frame_11
+    - name: Jotem_Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -2725,7 +2727,7 @@ ScriptedImporter:
         width: 26
         height: 41
       spriteId: 42d19c912e84da14dbd76d49f8b35b09
-    - name: Frame_12
+    - name: Jotem_Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
@@ -2734,7 +2736,7 @@ ScriptedImporter:
         width: 25
         height: 40
       spriteId: 86abaa06f0d05b344a7d9bb79aeb45d8
-    - name: Frame_13
+    - name: Jotem_Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -2743,7 +2745,7 @@ ScriptedImporter:
         width: 23
         height: 39
       spriteId: 39754dc862a20494e9c6c92128d4a83d
-    - name: Frame_14
+    - name: Jotem_Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -2752,7 +2754,7 @@ ScriptedImporter:
         width: 24
         height: 38
       spriteId: b0273ef60fd11e14489818933c2bd9cb
-    - name: Frame_15
+    - name: Jotem_Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
@@ -2761,7 +2763,7 @@ ScriptedImporter:
         width: 26
         height: 39
       spriteId: 8fc8058ea763afa4bbc9f6c993ce0c63
-    - name: Frame_16
+    - name: Jotem_Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
@@ -2770,7 +2772,7 @@ ScriptedImporter:
         width: 28
         height: 40
       spriteId: cab005074525a474c8f7a0398cc5c8d7
-    - name: Frame_17
+    - name: Jotem_Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
@@ -2779,7 +2781,7 @@ ScriptedImporter:
         width: 26
         height: 39
       spriteId: 31fa84899de62b746a54ec5c3cc8fda7
-    - name: Frame_18
+    - name: Jotem_Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
@@ -2788,7 +2790,7 @@ ScriptedImporter:
         width: 24
         height: 38
       spriteId: 6b0c845678c088b49a40689537f108c1
-    - name: Frame_19
+    - name: Jotem_Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
@@ -2797,7 +2799,7 @@ ScriptedImporter:
         width: 23
         height: 39
       spriteId: 75d517c108b1e204ea4256caeb95deac
-    - name: Frame_0
+    - name: Jotem_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -2806,7 +2808,7 @@ ScriptedImporter:
         width: 36
         height: 45
       spriteId: a12b655b4c088ed4796f079cda656084
-    - name: Frame_1
+    - name: Jotem_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -2815,7 +2817,7 @@ ScriptedImporter:
         width: 36
         height: 45
       spriteId: 70bfd2e94e9f666468aae9397c912be0
-    - name: Frame_2
+    - name: Jotem_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -2824,7 +2826,7 @@ ScriptedImporter:
         width: 36
         height: 46
       spriteId: a948838ceba8aa34fb88742cbb2eebcd
-    - name: Frame_3
+    - name: Jotem_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -2833,7 +2835,7 @@ ScriptedImporter:
         width: 36
         height: 47
       spriteId: 6258064164385344f98a3ff5892ae632
-    - name: Frame_4
+    - name: Jotem_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -2842,7 +2844,7 @@ ScriptedImporter:
         width: 36
         height: 48
       spriteId: 128f5c3ffd441aa4d9e5c8459bbe6fcb
-    - name: Frame_5
+    - name: Jotem_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -2851,7 +2853,7 @@ ScriptedImporter:
         width: 36
         height: 48
       spriteId: bf725d6128372e54eb10c3d536a28105
-    - name: Frame_59
+    - name: Jotem_Frame_59
       frameIndex: 59
       additiveSortOrder: 0
       cellRect:
@@ -2860,7 +2862,7 @@ ScriptedImporter:
         width: 81
         height: 32
       spriteId: a7d3ffe873fd50f44908ba05933771cd
-    - name: Frame_92
+    - name: Jotem_Frame_92
       frameIndex: 92
       additiveSortOrder: 0
       cellRect:
@@ -2869,7 +2871,7 @@ ScriptedImporter:
         width: 48
         height: 34
       spriteId: bc40ad24d3d7b8e4c89420cc99b75ab0
-    - name: Frame_93
+    - name: Jotem_Frame_93
       frameIndex: 93
       additiveSortOrder: 0
       cellRect:
@@ -2878,7 +2880,7 @@ ScriptedImporter:
         width: 48
         height: 33
       spriteId: 12ef839da3046b34f97d4373d4af5589
-    - name: Frame_94
+    - name: Jotem_Frame_94
       frameIndex: 94
       additiveSortOrder: 0
       cellRect:
@@ -2887,7 +2889,7 @@ ScriptedImporter:
         width: 55
         height: 27
       spriteId: 87441d785556df8428b1cd8d2750d2ec
-    - name: Frame_95
+    - name: Jotem_Frame_95
       frameIndex: 95
       additiveSortOrder: 0
       cellRect:
@@ -2896,7 +2898,7 @@ ScriptedImporter:
         width: 65
         height: 15
       spriteId: da74fb3b495d1bb498b7671527921a76
-    - name: Frame_96
+    - name: Jotem_Frame_96
       frameIndex: 96
       additiveSortOrder: 0
       cellRect:
@@ -2905,7 +2907,7 @@ ScriptedImporter:
         width: 65
         height: 17
       spriteId: c186303b44dbb904aa671c86e07fc3e3
-    - name: Frame_55
+    - name: Jotem_Frame_55
       frameIndex: 55
       additiveSortOrder: 0
       cellRect:
@@ -2914,7 +2916,7 @@ ScriptedImporter:
         width: 75
         height: 38
       spriteId: 71eb42b7e1983a64ba4e50b3afc1f27c
-    - name: Frame_56
+    - name: Jotem_Frame_56
       frameIndex: 56
       additiveSortOrder: 0
       cellRect:
@@ -2923,7 +2925,7 @@ ScriptedImporter:
         width: 58
         height: 32
       spriteId: d6274f3e24cf0784489944aee923d12e
-    - name: Frame_57
+    - name: Jotem_Frame_57
       frameIndex: 57
       additiveSortOrder: 0
       cellRect:
@@ -2932,7 +2934,7 @@ ScriptedImporter:
         width: 58
         height: 32
       spriteId: a3a3a3ec58d33a5468da49966ab94dc2
-    - name: Frame_58
+    - name: Jotem_Frame_58
       frameIndex: 58
       additiveSortOrder: 0
       cellRect:
@@ -2946,6 +2948,7 @@ ScriptedImporter:
   platformSettings:
   - name: Default
     overridden: 0
+    ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1

@@ -45,9 +45,24 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
+
+    public void AddMana(int mana, Image manaBar)
+    {
+        currentMana += mana;
+        manaBar.fillAmount = (float)currentMana / (float)maxmana;
+
+    }
+
+
     public void MinusRage(int rage, Image rageBar)
     {
         currentrage -= rage;
+        rageBar.fillAmount = (float)currentrage / (float)maxrage;
+    }
+
+    public void AddRage(int rage, Image rageBar)
+    {
+        currentrage += rage;
         rageBar.fillAmount = (float)currentrage / (float)maxrage;
     }
 

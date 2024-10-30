@@ -84,24 +84,26 @@ public class PlayerMoveP1 : MonoBehaviour
         // Movement to the right
         if (Input.GetKey(KeyCode.D))
         {
-            animator.SetTrigger("Run");
+            
             if (transform.localScale.x < 0)
             {
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-            
+            animator.SetInteger("State", 1);
+
         }
         // Movement to the left
         else if (Input.GetKey(KeyCode.A))
         {
-            animator.SetTrigger("Run");
+            
             if (transform.localScale.x > 0)
             {
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
-            
+            animator.SetInteger("State",1);
+
         }
         // Stop moving
         else
