@@ -8,6 +8,9 @@ public class DragonAttack : MonoBehaviour
 
     public void Activate()
     {
+        // Đảm bảo dragonPrefab luôn được kích hoạt trước khi tạo
+        dragonPrefab.SetActive(true);
+
         // Tạo chiêu thức rồng tại vị trí và hướng của firePoint
         GameObject dragon = Instantiate(dragonPrefab, firePoint.position, firePoint.rotation);
 

@@ -6,6 +6,12 @@ TagManager:
   tags:
   - P2
   - P1
+  - Rage
+  - Health1
+  - Mana
+  - Health2
+  - ulti
+  - New tag
   layers:
   - Default
   - TransparentFX
@@ -14,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Test
   - 
   - 
   - 
