@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: 7d435e97871abe8438f769705bce1b01
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Range Fight_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 132
+        width: 83
+        height: 67
+      alignment: 9
+      pivot: {x: 0.75873804, y: 0.59014845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4500482fc8132cc4285367b4f092228b
+      internalID: -1638287699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 130
+        width: 38
+        height: 74
+      alignment: 9
+      pivot: {x: 0.6589452, y: 0.5544149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40dc5fe639f87fc4eb3823c4ae5710a3
+      internalID: 1017097707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 130
+        width: 60
+        height: 65
+      alignment: 9
+      pivot: {x: 0.51118493, y: 0.62389666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb23d6536bf08c4ca8c91bd14bb010a
+      internalID: 1423482769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_3
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 130
+        width: 64
+        height: 57
+      alignment: 9
+      pivot: {x: 0.4895153, y: 0.70015436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9631d828753ede4cb03a943b1ae6f25
+      internalID: -1820749667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 130
+        width: 110
+        height: 65
+      alignment: 9
+      pivot: {x: 0.2681646, y: 0.60324705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6941460e10a394e419c56558a4c5de86
+      internalID: 1211610960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_5
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 130
+        width: 129
+        height: 65
+      alignment: 9
+      pivot: {x: 0.22427605, y: 0.6032466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddea350b8bbbe894daf28fa07f974e5d
+      internalID: 729981271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_7
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 124
+        width: 133
+        height: 75
+      alignment: 9
+      pivot: {x: 0.22247681, y: 0.59842914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861d87cfdb309254c89d63b904d6ebd6
+      internalID: 1687898009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_8
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 127
+        width: 143
+        height: 72
+      alignment: 9
+      pivot: {x: 0.22311209, y: 0.57456756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90c00614dc49d44fa40afae5e44d647
+      internalID: 828925771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_9
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 129
+        width: 161
+        height: 70
+      alignment: 9
+      pivot: {x: 0.18737528, y: 0.5766983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39a9c37133b5e548859fd8f8d5d48cc
+      internalID: -1150787681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 34
+        width: 169
+        height: 71
+      alignment: 9
+      pivot: {x: 0.18628968, y: 0.5567129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5b984022e08de4889330ef950c762f
+      internalID: -101408542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_13
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 33
+        width: 165
+        height: 71
+      alignment: 9
+      pivot: {x: 0.18275192, y: 0.5567133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1407576da1d3e314c85bad545067ed4d
+      internalID: -1114822850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_15
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 36
+        width: 166
+        height: 65
+      alignment: 9
+      pivot: {x: 0.17657746, y: 0.6135715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84538a72bc7a71d479141df6c8f9b534
+      internalID: -2098669988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_16
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 34
+        width: 158
+        height: 65
+      alignment: 9
+      pivot: {x: 0.18993406, y: 0.6238957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d967b6d0d7b0ecd439cb9b404eeaadb3
+      internalID: -1291085793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Range Fight_21
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 31
+        width: 61
+        height: 65
+      alignment: 9
+      pivot: {x: 0.48899865, y: 0.6032468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd391d19f2a7e12439c45ca6d6faf751
+      internalID: 1843374148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Range Fight_0: -1638287699
+      Range Fight_1: 1017097707
+      Range Fight_10: -366477300
+      Range Fight_11: 1340426615
+      Range Fight_12: -101408542
+      Range Fight_13: -1114822850
+      Range Fight_14: -1354702204
+      Range Fight_15: -2098669988
+      Range Fight_16: -1291085793
+      Range Fight_17: -2074313373
+      Range Fight_18: -1902180137
+      Range Fight_19: 414207442
+      Range Fight_2: 1423482769
+      Range Fight_20: 1115213812
+      Range Fight_21: 1843374148
+      Range Fight_22: -1861039730
+      Range Fight_23: 1507647842
+      Range Fight_24: 741109848
+      Range Fight_25: 1610334886
+      Range Fight_26: 1166605485
+      Range Fight_27: -1912469891
+      Range Fight_28: 1523274442
+      Range Fight_29: 947955274
+      Range Fight_3: -1820749667
+      Range Fight_30: 365063458
+      Range Fight_31: -1378710908
+      Range Fight_4: 1211610960
+      Range Fight_5: 729981271
+      Range Fight_6: 1843524277
+      Range Fight_7: 1687898009
+      Range Fight_8: 828925771
+      Range Fight_9: -1150787681
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
