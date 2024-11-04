@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f; // Tốc độ di chuyển của nhân vật  
     private Rigidbody2D rb;
+    private Vector2 moveInput;
 
     void Start()
     {
@@ -19,16 +20,13 @@ public class Player : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal"); // Nhận đầu vào từ phím trái/phải  
         float moveY = Input.GetAxis("Vertical"); // Nhận đầu vào từ phím lên/xuống (nếu cần)  
 
-        // Tính toán vectơ di chuyển  
-        Vector2 move = new Vector2(moveX, moveY);
-
-        // Gọi hàm để di chuyển  
-        Move(move);
+        // Tính toán vectơ di chuyển và chuẩn hóa nó  
+        moveInput = new Vector2(moveX, moveY).normalized;
     }
 
-    void Move(Vector2 direction)
+    void FixedUpdate()
     {
-        // Di chuyển nhân vật  
-        rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+        // Di chuyển nhân vật dựa trên đầu vào đã chuẩn hóa  
+        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
     }
 }
