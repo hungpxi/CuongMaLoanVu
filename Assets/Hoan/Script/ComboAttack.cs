@@ -34,7 +34,7 @@ public class ComboAttack : MonoBehaviour
     }
     public void Combo()
     {
-        if (Input.GetKeyDown(KeyCode.Keypad1) && !canattack)
+        if ((Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.J)) && !canattack)
         {
             canattack = true;
             ani.SetTrigger("" + combo);

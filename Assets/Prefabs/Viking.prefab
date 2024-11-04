@@ -45,9 +45,11 @@ GameObject:
   - component: {fileID: 3675311886902321108}
   - component: {fileID: 1878233360992252228}
   - component: {fileID: 5129454722713093623}
+  - component: {fileID: -419706143407889000}
+  - component: {fileID: 3234852071656626629}
   m_Layer: 6
   m_Name: Viking
-  m_TagString: P1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,6 +231,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 10
+  playerHealth: {fileID: -419706143407889000}
+--- !u!114 &-419706143407889000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939530744752404530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2086868a0d6e0914da43158124036266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  maxmana: 100
+  maxrage: 100
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3234852071656626629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939530744752404530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94158a49c53da044db98955ce41384b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  jumpForce: 10
+  playerHealth: {fileID: -419706143407889000}
 --- !u!1 &6574383148132009703
 GameObject:
   m_ObjectHideFlags: 0

@@ -43,12 +43,14 @@ GameObject:
   - component: {fileID: 8265394312243021587}
   - component: {fileID: 1154077273411761964}
   - component: {fileID: 3697193493438527361}
-  - component: {fileID: 8801292240754218646}
   - component: {fileID: 3244117384225973324}
   - component: {fileID: 4545248708908668860}
+  - component: {fileID: -5071408149905829195}
+  - component: {fileID: 2841032616460031906}
+  - component: {fileID: -8040889027513479723}
   m_Layer: 0
   m_Name: P1
-  m_TagString: P1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,20 +189,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8801292240754218646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151231221356724569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6616a2a812529ca41bfac438ce9a113f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 5
 --- !u!50 &3244117384225973324
 Rigidbody2D:
   serializedVersion: 4
@@ -243,3 +231,51 @@ MonoBehaviour:
   dragonPrefab: {fileID: 3141681443966778308, guid: 6468172c0cf42ac48a0e527c1b5d6422, type: 3}
   firePoint: {fileID: 8490719298811973894}
   dragonLifeTime: 5
+--- !u!114 &-5071408149905829195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151231221356724569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94158a49c53da044db98955ce41384b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  jumpForce: 10
+  playerHealth: {fileID: 2841032616460031906}
+--- !u!114 &2841032616460031906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151231221356724569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2086868a0d6e0914da43158124036266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  maxmana: 100
+  maxrage: 100
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-8040889027513479723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151231221356724569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18b16a9445bfeb43ac9157b08a432d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  jumpForce: 10
+  playerHealth: {fileID: 2841032616460031906}

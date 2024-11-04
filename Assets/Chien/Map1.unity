@@ -364,6 +364,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1151231221356724569, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4545248708908668860, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
       propertyPath: dragonLifeTime
       value: 10

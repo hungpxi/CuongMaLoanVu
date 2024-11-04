@@ -23,11 +23,11 @@ public class PlayerMoves_P1 : MonoBehaviour
 
     private List<CharAndAnimator> listPlayer = new List<CharAndAnimator>();
 
+    private Image mana1, rage1, healthbar1, mana2, rage2, healthbar2;
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         Canvas canvas1 = GameObject.FindGameObjectWithTag("Health1").GetComponent<Canvas>();
         Canvas canvas2 = GameObject.FindGameObjectWithTag("Health2").GetComponent<Canvas>();
@@ -36,6 +36,12 @@ public class PlayerMoves_P1 : MonoBehaviour
         {
             if (player.transform.localScale.x > 0)
             {
+                var active = player.gameObject.GetComponent<PlayerMoveP2>();
+                if(active != null)
+                {
+                    active.enabled = false;
+                }
+                
                 player1 = player;
                 p1 = new CharAndAnimator()
                 {
@@ -46,6 +52,12 @@ public class PlayerMoves_P1 : MonoBehaviour
             }
             else
             {
+                var active = player.gameObject.GetComponent<PlayerMoves_P1>();
+                if(active != null)
+                {
+                    active.enabled = false;
+                }
+                
                 player2 = player;
                 p2 = new CharAndAnimator()
                 {
@@ -56,7 +68,7 @@ public class PlayerMoves_P1 : MonoBehaviour
             }
         }
 
-        Debug.Log(listPlayer.Count);
+        //Debug.Log(listPlayer.Count);
 
 
     }
@@ -115,7 +127,7 @@ public class PlayerMoves_P1 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J)) // danh thuong
         {
-            animator.SetTrigger("Attack1");
+            animator.SetTrigger(0);
         }
 
         if (Input.GetKeyDown(KeyCode.I)) // Su dung Ultimate
@@ -145,21 +157,56 @@ public class PlayerMoves_P1 : MonoBehaviour
         {
             animator.SetTrigger("Skill3");
         }
+
+        if (Input.GetKeyDown(KeyCode.S)) // Skill 3
+        {
+            animator.SetTrigger("Guard");
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player" /* ||Them nut vao day */)
         {
-            var gamer1 = p1.canvas.transform.Find("Mana");
-            var gamer11 = p1.canvas.transform.Find("Rage");
-            var gamer111 = p1.canvas.transform.Find("Healthbar");
+            if(p1 != null)
+            {
+                var gamer1 = p1.canvas.transform.Find("Mana");
+                var gamer11 = p1.canvas.transform.Find("Rage");
+                var gamer111 = p1.canvas.transform.Find("Healthbar");
 
-            Image mana1 = gamer1.transform.Find("FillBar").GetComponent<Image>();
-            Image rage1 = gamer11.transform.Find("FillBar").GetComponent<Image>();
-            Image healthbar1 = gamer111.transform.Find("FillBar").GetComponent<Image>();
+                if (gamer1 != null && gamer11 != null && gamer111 != null)
+                {
+                    mana1 = gamer1.transform.Find("FillBar").GetComponent<Image>();
+                    rage1 = gamer11.transform.Find("FillBar").GetComponent<Image>();
+                    healthbar1 = gamer111.transform.Find("FillBar").GetComponent<Image>();
+                }
+                playerHealth.MinusRage(10, rage1);
 
-            playerHealth.MinusMana(2,mana1);
+                playerHealth.MinusHp(10, healthbar1);
+                //enemyHealth.MinusHp(10, healthbar2);
+
+                playerHealth.MinusMana(10, mana1);
+            }
+            
+
+            if (p2 != null)
+            {
+                var gamer2 = p2.canvas.transform.Find("Mana");
+                var gamer22 = p2.canvas.transform.Find("Rage");
+                var gamer222 = p2.canvas.transform.Find("Healthbar");
+                if (gamer2 != null && gamer22 != null && gamer222 != null)
+                {
+                    mana2 = gamer2.transform.Find("FillBar").GetComponent<Image>();
+                    rage2 = gamer22.transform.Find("FillBar").GetComponent<Image>();
+                    healthbar2 = gamer222.transform.Find("FillBar").GetComponent<Image>();
+                }
+            }
+
+            
+            var enemyHealth = collision.gameObject.GetComponent<PlayerHealth>();
+           
+            
+
 
             
         }

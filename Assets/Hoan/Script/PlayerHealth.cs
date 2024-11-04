@@ -66,20 +66,32 @@ public class PlayerHealth : MonoBehaviour
         rageBar.fillAmount = (float)currentrage / (float)maxrage;
     }
 
-    public void TakeDamage(int damage)
+    public void MinusHp(int damage, Image healthbar)
     {
         currentHealth -= damage;
+        
         if (currentHealth < 0)
         {
             currentHealth = 0;
             OnDeath.Invoke();
         }
+        healthbar.fillAmount = (float)currentHealth / (float)maxHealth;
+    }
+
+    public void AddHp(int damage,Image healthbar)
+    {
+        currentHealth += damage;
+        if (currentHealth >= maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        healthbar.fillAmount = (float)currentHealth / (float)maxHealth;
     }
 
     public void Death()
     {
         Destroy(gameObject);
-        SceneManager.LoadScene("EndGame");
+        //SceneManager.LoadScene("EndGame");
     }
 
     private void Update()
