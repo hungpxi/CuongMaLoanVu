@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 4545248708908668860}
   - component: {fileID: 1743922400153984267}
   - component: {fileID: 7823965242203570893}
+  - component: {fileID: 5557046896142803567}
   m_Layer: 7
   m_Name: P1
   m_TagString: P1
@@ -230,7 +231,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151231221356724569}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6616a2a812529ca41bfac438ce9a113f, type: 3}
   m_Name: 
@@ -291,6 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960736f5579438e4ea1ccacb2f1fff81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TakeDamege: {fileID: 7823965242203570893}
   animator: {fileID: 3697193493438527361}
   attack1_Point: {fileID: 2438633565935957449}
   RangeAttack_Point: {fileID: 3351707971031775093}
@@ -300,11 +302,16 @@ MonoBehaviour:
     m_Bits: 128
   attack1_Range: 0.86
   attackDamage: 10
+  MinusMana: 10
+  AddRage: 5
+  Rage_nhan_Dame: 10
   RangeAttack_Range: 2
   Range_attackDamage: 40
   SpecialSkill_Range: 3.11
   SpecialSkill_attackDamage: 20
   attack1_Rate: 2
+  moveSpeed: 10
+  jumpForce: 10
 --- !u!114 &7823965242203570893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +326,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3697193493438527361}
   maxHealth: 100
+  maxMana: 100
+  maxRage: 100
+--- !u!114 &5557046896142803567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151231221356724569}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282dc27fb97040144834d5167e203410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TakeDamege: {fileID: 7823965242203570893}
+  animator: {fileID: 3697193493438527361}
+  attack1_Point: {fileID: 2438633565935957449}
+  RangeAttack_Point: {fileID: 3351707971031775093}
+  SpecialSkill_Point: {fileID: 4390310530683031468}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  attack1_Range: 0.86
+  attackDamage: 10
+  MinusMana: 10
+  AddRage: 5
+  Rage_nhan_Dame: 10
+  RangeAttack_Range: 2
+  Range_attackDamage: 40
+  SpecialSkill_Range: 3.11
+  SpecialSkill_attackDamage: 20
+  attack1_Rate: 2
+  moveSpeed: 0
+  jumpForce: 0
 --- !u!1 &4805061425867187011
 GameObject:
   m_ObjectHideFlags: 0

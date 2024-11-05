@@ -361,24 +361,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1743922400153984267, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
-      propertyPath: Mana
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1743922400153984267, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
-      propertyPath: Rage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1743922400153984267, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
-      propertyPath: heathBar
-      value: 
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4738502122758795462, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.54
+      value: 9.04
       objectReference: {fileID: 0}
     - target: {fileID: 4738502122758795462, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.65
+      value: -2.83
       objectReference: {fileID: 0}
     - target: {fileID: 4738502122758795462, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -411,6 +403,14 @@ PrefabInstance:
     - target: {fileID: 4738502122758795462, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557046896142803567, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557046896142803567, guid: 7302f87820b7ef541af25df3edd9e9a0, type: 3}
+      propertyPath: moveSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -806,7 +806,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -123758689, guid: aaf5fde724250a44fb3f7d7a2c88fe21, type: 3}
-  m_Type: 1
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
@@ -2070,7 +2070,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -123758689, guid: aaf5fde724250a44fb3f7d7a2c88fe21, type: 3}
-  m_Type: 1
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0

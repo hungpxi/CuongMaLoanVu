@@ -27,13 +27,13 @@ public class TakeDamege : MonoBehaviour
         currentRage = maxRage;
     }
 
-    public void TakeDamage(Image Ihealth, Image Imana, Image Irage ,int damage, int mana)
+    public void TakeDamage(Image Ihealth, Image Irage ,int damage,int Rage_nhan_Dame)
     {
         currentHealth -= damage;
         Ihealth.fillAmount = (float)currentHealth / (float)maxHealth;
-        
-        currentMana -= mana;
-        Imana.fillAmount = (float)currentMana / (float)maxMana;
+
+        currentRage += Rage_nhan_Dame;
+        Irage.fillAmount = (float)currentRage / (float)maxRage;
 
         //currentRage += rage
         // Play hurt ainmation
@@ -46,7 +46,24 @@ public class TakeDamege : MonoBehaviour
         }
     }
 
-    
+    public void TakeMana(Image Imana, int mana)
+    {
+        currentMana -= mana;
+        Imana.fillAmount = (float)currentMana / (float)maxMana;
+    }
+
+    public void TakeRage(Image Irage, int rage)
+    {
+        currentRage -= rage;
+        Irage.fillAmount = (float)currentRage / (float)maxRage;
+    }
+    public void AddRage(Image Irage, int rage)
+    {
+        currentRage += rage;
+        Irage.fillAmount = (float)currentRage / (float)maxRage;
+    }
+
+
     void Die()
     {
         Debug.Log("Enemy Die!");
