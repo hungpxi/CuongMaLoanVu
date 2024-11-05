@@ -111,10 +111,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 5478546495897009941}
-    m_Position: {x: 200, y: 250, z: 0}
+    m_Position: {x: 110, y: 320, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -935525882360450369}
-    m_Position: {x: 470, y: -10, z: 0}
+    m_Position: {x: 510, y: 10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4378302881697316711}
     m_Position: {x: 590, y: 250, z: 0}
@@ -132,10 +132,10 @@ AnimatorStateMachine:
     m_Position: {x: -100, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5898664834299388765}
-    m_Position: {x: 530, y: 80, z: 0}
+    m_Position: {x: 600, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -310231342177092266}
-    m_Position: {x: 280, y: 90, z: 0}
+    m_Position: {x: 390, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3207011884958760489}
     m_Position: {x: -80, y: 420, z: 0}
@@ -147,13 +147,13 @@ AnimatorStateMachine:
     m_Position: {x: 890, y: 330, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5683367601551314196}
-    m_Position: {x: 270, y: 150, z: 0}
+    m_Position: {x: 160, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2250783470911996567}
     m_Position: {x: -40, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5437616551182938442}
-    m_Position: {x: 200, y: 420, z: 0}
+    m_Position: {x: 320, y: 460, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -6653711996890231295}
@@ -570,10 +570,7 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: State
-    m_EventTreshold: 3
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5898664834299388765}
   m_Solo: 0
@@ -630,7 +627,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0

@@ -40,6 +40,7 @@ public class PlayerMove_P1 : MonoBehaviour
             animator.SetInteger("State", 3); // Set trang thai roi
         }
 
+
         // Movement to the right
         if (Input.GetKey(KeyCode.D))
         {

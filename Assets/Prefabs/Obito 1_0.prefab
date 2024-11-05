@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8937336307077943297}
   - component: {fileID: 8885119961035217527}
   - component: {fileID: 1060465852970334684}
+  - component: {fileID: -5581455173197672838}
   m_Layer: 0
   m_Name: Obito 1_0
   m_TagString: Player
@@ -232,3 +233,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 10
+--- !u!114 &-5581455173197672838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4261449946876721917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960736f5579438e4ea1ccacb2f1fff81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heathBar: {fileID: 0}
+  Mana: {fileID: 0}
+  Rage: {fileID: 0}
+  animator: {fileID: 0}
+  attack1_Point: {fileID: 0}
+  RangeAttack_Point: {fileID: 0}
+  SpecialSkill_Point: {fileID: 0}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attack1_Range: 0.5
+  attackDamage: 10
+  MinusMana: 2
+  RangeAttack_Range: 0.5
+  Range_attackDamage: 40
+  SpecialSkill_Range: 0.5
+  SpecialSkill_attackDamage: 20
+  attack1_Rate: 2

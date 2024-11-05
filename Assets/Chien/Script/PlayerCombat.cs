@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
+    //Mau, mana, no
+    private Image heathBar, Mana, Rage;
+    private Canvas canvas;   
     // dragon
     private DragonAttack dragonAttack; // Tham chiếu tới chiêu thức rồng của nhân vật
 
@@ -23,23 +27,35 @@ public class PlayerCombat : MonoBehaviour
     // dame và tầm chiêu
     public float attack1_Range = 0.5f;
     public int attackDamage = 10;
+    public int MinusMana = 10;
+    public int AddRage = 10;
+
 
     public float RangeAttack_Range = 0.5f;
     public int Range_attackDamage = 40;
 
     public float SpecialSkill_Range = 0.5f;
     public int SpecialSkill_attackDamage = 20;
+    
     //---------------------------------------
     // attack rate
     public float attack1_Rate = 2f;
     float nextAttackTime = 0f;
 
-    
-    
+    void Start()
+    {
+        canvas = GameObject.Find("Health 1").GetComponent<Canvas>();
+        heathBar = canvas.transform.Find("Healthbar").transform.Find("FillBar").GetComponent<Image>();
+        Mana = canvas.transform.Find("Mana").transform.Find("FillBar").GetComponent<Image>();
+        Rage = canvas.transform.Find("Rage").transform.Find("FillBar").GetComponent<Image>();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > nextAttackTime)
+        
+        //===========
+        if (Time.time > nextAttackTime)
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
@@ -83,7 +99,7 @@ public class PlayerCombat : MonoBehaviour
         // Damage them
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<TakeDamege>().TakeDamage(attackDamage);
+            enemy.GetComponent<TakeDamege>().TakeDamage(heathBar,Mana,Rage,attackDamage, MinusMana);
         }
     }
 
@@ -99,7 +115,7 @@ public class PlayerCombat : MonoBehaviour
         // Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<TakeDamege>().TakeDamage(Range_attackDamage);
+            //enemy.GetComponent<TakeDamege>().TakeDamage(Range_attackDamage);
         }
     }
 
@@ -115,7 +131,7 @@ public class PlayerCombat : MonoBehaviour
         // Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<TakeDamege>().TakeDamage(SpecialSkill_attackDamage);
+            //enemy.GetComponent<TakeDamege>().TakeDamage(SpecialSkill_attackDamage);
         }
     }
 
@@ -138,5 +154,10 @@ public class PlayerCombat : MonoBehaviour
         Gizmos.DrawWireSphere(RangeAttack_Point.position, RangeAttack_Range);
         Gizmos.DrawWireSphere(SpecialSkill_Point.position, SpecialSkill_Range);
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        gameObject.GetComponent<TakeDamege>().TakeDamage(heathBar, Mana, Rage, attackDamage, MinusMana);
+    }
+
 }
