@@ -16,19 +16,19 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] int maxrage;
     int currentrage;
 
-    public UnityEvent OnDeath;
+    //public UnityEvent OnDeath;
 
 
 
-    private void OnEnable()
-    {
-        OnDeath.AddListener(Death);
-    }
+    //private void OnEnable()
+    //{
+    //    OnDeath.AddListener(Death);
+    //}
 
-    private void OnDisable()
-    {
-        OnDeath.RemoveListener(Death);
-    }
+    //private void OnDisable()
+    //{
+    //    OnDeath.RemoveListener(Death);
+    //}
 
     private void Start()
     {
@@ -73,7 +73,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth < 0)
         {
             currentHealth = 0;
-            OnDeath.Invoke();
+            //OnDeath.Invoke();
         }
         healthbar.fillAmount = (float)currentHealth / (float)maxHealth;
     }
