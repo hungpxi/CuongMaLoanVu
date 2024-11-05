@@ -1,14 +1,16 @@
-%YAML 1.1
+ %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
   tags:
   - P1
-  - Health1
   - Rage
-  - Health2
+  - Health1
   - Mana
+  - Health2
+  - ulti
+  - New tag
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Test
   - 
   - 
   - 

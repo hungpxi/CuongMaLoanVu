@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 4261449946876721918}
   - component: {fileID: 1215058151965069684}
   - component: {fileID: 8140126082574936261}
-  - component: {fileID: 7674907025329926208}
   - component: {fileID: 8937336307077943297}
   - component: {fileID: 8885119961035217527}
-  - component: {fileID: 2390815189145756143}
+  - component: {fileID: 1060465852970334684}
+  - component: {fileID: -5581455173197672838}
   m_Layer: 0
   m_Name: Obito 1_0
   m_TagString: Player

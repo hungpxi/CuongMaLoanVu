@@ -22,6 +22,8 @@ public class MapManager : MonoBehaviour
             Vector3 player1Scale = player1Character.transform.localScale;
             player1Character.transform.localScale = new Vector3(Mathf.Abs(player1Scale.x), player1Scale.y, player1Scale.z);
 
+            
+            
             Debug.Log("Đã đặt vị trí và scale cho người chơi 1.");
         }
 
