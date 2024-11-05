@@ -160,7 +160,7 @@ public class PlayerCombat2 : MonoBehaviour
     {
         // Play an attack animation
         animator.SetTrigger("Attack1");
-
+        
         // TakeDamege.TakeMana(Mana1, MinusMana);
         TakeDamege.TakeRage(Rage1, AddRage);
 

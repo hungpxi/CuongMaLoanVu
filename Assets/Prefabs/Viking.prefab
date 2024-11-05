@@ -45,6 +45,8 @@ GameObject:
   - component: {fileID: 3675311886902321108}
   - component: {fileID: 1878233360992252228}
   - component: {fileID: 5129454722713093623}
+  - component: {fileID: -956636016880778667}
+  - component: {fileID: 728163324702854748}
   m_Layer: 7
   m_Name: Viking
   m_TagString: Player
@@ -222,13 +224,78 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2939530744752404530}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a18b16a9445bfeb43ac9157b08a432d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 20
+  playerHealth: {fileID: 0}
+--- !u!114 &-956636016880778667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939530744752404530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282dc27fb97040144834d5167e203410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TakeDamege: {fileID: 0}
+  animator: {fileID: 0}
+  attack1_Point: {fileID: 0}
+  RangeAttack_Point: {fileID: 0}
+  SpecialSkill_Point: {fileID: 0}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attack1_Range: 0.5
+  attackDamage: 2
+  MinusMana: 10
+  AddRage: 10
+  Rage_nhan_Dame: 10
+  RangeAttack_Range: 0.5
+  Range_attackDamage: 8
+  SpecialSkill_Range: 0.5
+  SpecialSkill_attackDamage: 20
+  attack1_Rate: 2
+  moveSpeed: 10
+  jumpForce: 10
+--- !u!114 &728163324702854748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939530744752404530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960736f5579438e4ea1ccacb2f1fff81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TakeDamege: {fileID: 0}
+  animator: {fileID: 0}
+  attack1_Point: {fileID: 0}
+  RangeAttack_Point: {fileID: 0}
+  SpecialSkill_Point: {fileID: 0}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attack1_Range: 0.5
+  attackDamage: 2
+  MinusMana: 10
+  AddRage: 10
+  Rage_nhan_Dame: 10
+  RangeAttack_Range: 0.5
+  Range_attackDamage: 8
+  SpecialSkill_Range: 0.5
+  SpecialSkill_attackDamage: 20
+  attack1_Rate: 2
+  moveSpeed: 0
+  jumpForce: 0
 --- !u!1 &6574383148132009703
 GameObject:
   m_ObjectHideFlags: 0

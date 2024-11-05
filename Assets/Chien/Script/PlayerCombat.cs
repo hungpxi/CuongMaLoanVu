@@ -118,10 +118,6 @@ public class PlayerCombat : MonoBehaviour
 
 
 
-
-
-
-
         //===========
         if (Time.time > nextAttackTime)
         {

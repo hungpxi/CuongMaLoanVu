@@ -223,20 +223,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8801292240754218646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151231221356724569}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6616a2a812529ca41bfac438ce9a113f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 5
 --- !u!50 &3244117384225973324
 Rigidbody2D:
   serializedVersion: 4
@@ -298,7 +284,7 @@ MonoBehaviour:
   SpecialSkill_Point: {fileID: 4390310530683031468}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 256
   attack1_Range: 0.86
   attackDamage: 10
   MinusMana: 10
@@ -346,7 +332,7 @@ MonoBehaviour:
   SpecialSkill_Point: {fileID: 4390310530683031468}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   attack1_Range: 0.86
   attackDamage: 10
   MinusMana: 10
@@ -357,8 +343,8 @@ MonoBehaviour:
   SpecialSkill_Range: 3.11
   SpecialSkill_attackDamage: 20
   attack1_Rate: 2
-  moveSpeed: 0
-  jumpForce: 0
+  moveSpeed: 10
+  jumpForce: 10
 --- !u!1 &4805061425867187011
 GameObject:
   m_ObjectHideFlags: 0

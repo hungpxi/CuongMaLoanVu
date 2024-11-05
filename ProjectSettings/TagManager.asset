@@ -1,15 +1,13 @@
- %YAML 1.1
+%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
   tags:
-  - P1
-  - Rage
   - Health1
-  - Mana
+  - Rage
   - Health2
-  - ulti
+  - Mana
   - New tag
   layers:
   - Default
@@ -18,9 +16,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - Test
   - 
+  - Test
+  - P2
   - 
   - 
   - 
