@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 728163324702854748}
   m_Layer: 7
   m_Name: Viking
-  m_TagString: Player
+  m_TagString: P3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
