@@ -31,7 +31,7 @@ public class DragonMovement : MonoBehaviour
             if (enemy != null)
             {
                 gameObject.SetActive(false);
-               // enemy.TakeDamage(dragonDamage);
+                enemy.TakeDamage1(dragonDamage);
                 
             }
 

@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 5557046896142803567}
   m_Layer: 7
   m_Name: P1
-  m_TagString: Player
+  m_TagString: P1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -295,8 +295,8 @@ MonoBehaviour:
   SpecialSkill_Range: 3.11
   SpecialSkill_attackDamage: 20
   attack1_Rate: 2
-  moveSpeed: 10
-  jumpForce: 10
+  moveSpeed: 7
+  jumpForce: 7
 --- !u!114 &7823965242203570893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +313,7 @@ MonoBehaviour:
   maxHealth: 100
   maxMana: 100
   maxRage: 100
+  healthBar: {fileID: 0}
 --- !u!114 &5557046896142803567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,8 +344,8 @@ MonoBehaviour:
   SpecialSkill_Range: 3.11
   SpecialSkill_attackDamage: 20
   attack1_Rate: 2
-  moveSpeed: 10
-  jumpForce: 10
+  moveSpeed: 7
+  jumpForce: 7
 --- !u!1 &4805061425867187011
 GameObject:
   m_ObjectHideFlags: 0

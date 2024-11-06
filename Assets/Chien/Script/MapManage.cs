@@ -17,6 +17,7 @@ public class MapManager : MonoBehaviour
         {
             GameObject player1Character = Instantiate(characterPrefabs[player1Index], player1StartPosition.position, Quaternion.identity);
             player1Character.name = "Player1Character";
+            
 
             // Đảm bảo nhân vật của người chơi 1 giữ nguyên scaleX ban đầu
             Vector3 player1Scale = player1Character.transform.localScale;
@@ -32,6 +33,7 @@ public class MapManager : MonoBehaviour
         {
             GameObject player2Character = Instantiate(characterPrefabs[player2Index], player2StartPosition.position, Quaternion.identity);
             player2Character.name = "Player2Character";
+            
 
             // Đặt scaleX thành giá trị âm để nhân vật quay mặt về phía khác
             Vector3 player2Scale = player2Character.transform.localScale;

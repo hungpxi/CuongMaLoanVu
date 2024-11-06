@@ -8,7 +8,8 @@ TagManager:
   - Rage
   - Health2
   - Mana
-  - New tag
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX

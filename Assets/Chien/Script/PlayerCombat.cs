@@ -76,44 +76,173 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool isP4 = gameObject.CompareTag("P4");
+
         // run jump stop
         if (Input.GetKeyDown(KeyCode.W) && rb.velocity.y == 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            animator.SetTrigger("Jump"); // Set trang thai nhay
+            if (isP4)
+                animator.SetInteger("Integer", 2);
+            else
+                animator.SetTrigger("Jump"); // Set trang thai nhay
         }
+
         if (rb.velocity.y < 0)
         {
-            animator.SetInteger("State", 3); // Set trang thai roi
+            if (gameObject.CompareTag("Obito"))
+            {
+                animator.SetInteger("State", 0);
+            }
+            if (isP4)
+                animator.SetInteger("Integer", 0);
+            else
+                animator.SetInteger("State", 3);
+            // Set trang thai roi
         }
-
 
         // Movement to the right
-        if (Input.GetKey(KeyCode.D))
+        //if (Input.GetKey(KeyCode.D))
+        //{
+        //    if (transform.localScale.x < 0)
+        //    {
+        //        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        //    }
+        //    rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+        //    animator.SetInteger("State",1);
+        //}
+        //// Movement to the left
+        //else if (Input.GetKey(KeyCode.A))
+        //{
+        //    if (transform.localScale.x > 0)
+        //    {
+        //        transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        //    }
+        //    rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
+        //    animator.SetInteger("State",1);
+        //}
+        //// Stop moving
+
+        //else
+        //{
+        //    rb.velocity = new Vector2(0, rb.velocity.y);
+        //    animator.SetInteger("State", 0);
+
+        //}
+        //--------------
+
+
+
+        if (gameObject.CompareTag("Obito"))
         {
-            if (transform.localScale.x < 0)
+            if (Input.GetKeyUp(KeyCode.K))
             {
-                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                animator.SetInteger("State", 0);
             }
-            rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+            // Movement to the right
+            if (Input.GetKey(KeyCode.D))
+            {
+
+                if (transform.localScale.x < 0)
+                {
+                    transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                }
+                rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+                animator.SetInteger("State", 1);
+
+            }
+            // Movement to the left
+            else if (Input.GetKey(KeyCode.A))
+            {
+
+                if (transform.localScale.x > 0)
+                {
+                    transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                }
+                rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
+                animator.SetInteger("State", 1);
+
+            }
+            // Stop moving
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetInteger("State", 0);
+
+            }
+
         }
-        // Movement to the left
-        else if (Input.GetKey(KeyCode.A))
+        else if(gameObject.CompareTag("P1"))
         {
-            if (transform.localScale.x > 0)
+            // Movement to the right
+
+            if (Input.GetKey(KeyCode.D))
             {
-                transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                if (transform.localScale.x < 0)
+                {
+                    transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                }
+                rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+                animator.SetInteger("State", 1);
             }
-            rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+            // Movement to the left
+            else if (Input.GetKey(KeyCode.A))
+            {
+                if (transform.localScale.x > 0)
+                {
+                    transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                }
+                rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
+                animator.SetInteger("State", 1);
+            }
+            // Stop moving
+
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                animator.SetInteger("State", 0);
+
+            }
         }
-        // Stop moving
         else
         {
-            rb.velocity = new Vector2(0, rb.velocity.y);
-            animator.SetInteger("State", 0);
+            // Movement to the right
+            if (Input.GetKey(KeyCode.D))
+            {
+                if (transform.localScale.x < 0)
+                {
+                    transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                }
+                rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+                if (isP4)
+                    animator.SetInteger("Integer", 1);
+                else
+                    animator.SetTrigger("Run");
+            }
+            // Movement to the left
+            else if (Input.GetKey(KeyCode.A))
+            {
+                if (transform.localScale.x > 0)
+                {
+                    transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                }
+                rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
+                if (isP4)
+                    animator.SetInteger("Integer", 1);
+                else
+                    animator.SetTrigger("Run");
 
+            }
+            // Stop moving
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                if (isP4)
+                    animator.SetInteger("Integer", 0);
+                else
+                    animator.SetInteger("State", 0);
+
+            }
         }
 
 
@@ -129,36 +258,50 @@ public class PlayerCombat : MonoBehaviour
         }
 
         //Range_Attack
-        if (Input.GetKeyDown(KeyCode.L))
+        
+        if (Time.time > nextAttackTime)
         {
-            Range_Attack();
-            nextAttackTime = Time.time + 1f / attack1_Rate;
+            if (Input.GetKeyDown(KeyCode.L) && TakeDamege.GetCurrentMana() >= 10)
+            {
+                Range_Attack();
+                nextAttackTime = Time.time + 4f / attack1_Rate;
+            }
         }
 
         //SpecialSkill
-        if (Input.GetKeyDown(KeyCode.K))
+        
+        if (Time.time > nextAttackTime)
         {
-            SpecialSkill_Attack();
-            nextAttackTime = Time.time + 1f / attack1_Rate;
+            if (Input.GetKeyDown(KeyCode.K) && TakeDamege.GetCurrentMana() >= 30)
+            {
+                SpecialSkill_Attack();
+                nextAttackTime = Time.time + 6f / attack1_Rate;
+            }
         }
 
         // Ulti
-        if (Input.GetKeyDown(KeyCode.I)) // Su dung Ultimate
+        if (Input.GetKeyDown(KeyCode.I) && TakeDamege.GetCurrentRage() >= 100) // Su dung Ultimate
         {
-            dragonAttack = GetComponent<DragonAttack>();
+            //dragonAttack = GetComponent<DragonAttack>();
 
             animator.SetTrigger("Ulti");
             dragonAttack.Activate();
+
+            // Đặt Rage về 0 sau khi sử dụng chiêu Ulti
+            TakeDamege.ResetRage();
         }
 
     }
     private void Attack()
     {
         // Play an attack animation
-        animator.SetTrigger("Attack1");
+        if (gameObject.CompareTag("P4"))
+            animator.SetInteger("Integer", 4);
+        else
+            animator.SetTrigger("Attack1");
 
-       // TakeDamege.TakeMana(Mana1, MinusMana);
-        TakeDamege.TakeRage(Rage1, AddRage);
+        // TakeDamege.TakeMana(Mana1, MinusMana);
+        TakeDamege.AddRage(Rage1, AddRage);
 
         //Detect enemies in range of attack
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attack1_Point.position, attack1_Range, enemyLayers);
@@ -166,7 +309,7 @@ public class PlayerCombat : MonoBehaviour
         // Damage them
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<TakeDamege>().TakeDamage(heathBar2 ,Rage2, attackDamage, Rage_nhan_Dame);
+            enemy.GetComponent<TakeDamege>().TakeDamage(heathBar2 ,Rage2, 2, Rage_nhan_Dame);
         }
     }
 
@@ -174,7 +317,10 @@ public class PlayerCombat : MonoBehaviour
     private void Range_Attack()
     {
         // Play an attack animation
-        animator.SetTrigger("Bullet");
+        if (gameObject.CompareTag("P4"))
+            animator.SetInteger("Integer", 5);
+        else
+            animator.SetTrigger("Bullet");
 
         TakeDamege.TakeMana(Mana1, MinusMana);
         TakeDamege.AddRage(Rage1, AddRage);
@@ -185,7 +331,7 @@ public class PlayerCombat : MonoBehaviour
         // Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<TakeDamege>().TakeDamage(heathBar2, Rage2, Range_attackDamage, Rage_nhan_Dame);
+            enemy.GetComponent<TakeDamege>().TakeDamage(heathBar2, Rage2, 8, Rage_nhan_Dame);
         }
     }
 
@@ -193,7 +339,10 @@ public class PlayerCombat : MonoBehaviour
     private void SpecialSkill_Attack()
     {
         // Play an attack animation
-        animator.SetTrigger("Skill1");
+        if (gameObject.CompareTag("P4"))
+            animator.SetInteger("Integer", 6);
+        else
+            animator.SetTrigger("Skill1");
 
         TakeDamege.TakeMana(Mana1, MinusMana+20);
         TakeDamege.AddRage(Rage1, AddRage);
@@ -204,7 +353,7 @@ public class PlayerCombat : MonoBehaviour
         // Damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<TakeDamege>().TakeDamage(heathBar2, Rage2, SpecialSkill_attackDamage, Rage_nhan_Dame);
+            enemy.GetComponent<TakeDamege>().TakeDamage(heathBar2, Rage2, 15, Rage_nhan_Dame);
         }
     }
 
