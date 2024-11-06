@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6173631173605037898}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,13 +44,12 @@ GameObject:
   - component: {fileID: 4730592367306445807}
   - component: {fileID: 3675311886902321108}
   - component: {fileID: 1878233360992252228}
-  - component: {fileID: 1666188921763003010}
-  - component: {fileID: 7568680849547849804}
-  - component: {fileID: 2559624336489839069}
-  - component: {fileID: 7320709437759677725}
-  m_Layer: 6
+  - component: {fileID: 5129454722713093623}
+  - component: {fileID: -956636016880778667}
+  - component: {fileID: 728163324702854748}
+  m_Layer: 7
   m_Name: Viking
-  m_TagString: P1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,7 +321,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2939530744752404530}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 282dc27fb97040144834d5167e203410, type: 3}
   m_Name: 
@@ -346,8 +345,41 @@ MonoBehaviour:
   SpecialSkill_attackDamage: 20
   attack1_Rate: 2
   moveSpeed: 10
+  jumpForce: 20
+  playerHealth: {fileID: 0}
+--- !u!114 &-956636016880778667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939530744752404530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282dc27fb97040144834d5167e203410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TakeDamege: {fileID: 0}
+  animator: {fileID: 0}
+  attack1_Point: {fileID: 0}
+  RangeAttack_Point: {fileID: 0}
+  SpecialSkill_Point: {fileID: 0}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attack1_Range: 0.5
+  attackDamage: 2
+  MinusMana: 10
+  AddRage: 10
+  Rage_nhan_Dame: 10
+  RangeAttack_Range: 0.5
+  Range_attackDamage: 8
+  SpecialSkill_Range: 0.5
+  SpecialSkill_attackDamage: 20
+  attack1_Rate: 2
+  moveSpeed: 10
   jumpForce: 10
---- !u!114 &2559624336489839069
+--- !u!114 &728163324702854748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -404,7 +436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4435502042117339815}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,7 +498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8729493662322748717}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: groundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

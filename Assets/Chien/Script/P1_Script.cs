@@ -40,6 +40,7 @@ public class PlayerMove_P1 : MonoBehaviour
             animator.SetInteger("State", 3); // Set trang thai roi
         }
 
+
         // Movement to the right
         if (Input.GetKey(KeyCode.D))
         {
@@ -68,32 +69,32 @@ public class PlayerMove_P1 : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.J)) // danh thuong
-        {
-            animator.SetTrigger("Attack1");
-        }
+        //if (Input.GetKeyDown(KeyCode.J)) // danh thuong
+        //{
+        //    animator.SetTrigger("Attack1");
+        //}
 
-        if (Input.GetKeyDown(KeyCode.I)) // Su dung Ultimate
-        {
+        //if (Input.GetKeyDown(KeyCode.I)) // Su dung Ultimate
+        //{
             
-            animator.SetTrigger("Ulti");
-            dragonAttack.Activate();
-        }
+        //    animator.SetTrigger("Ulti");
+        //    dragonAttack.Activate();
+        //}
 
-        if (Input.GetKeyDown(KeyCode.K)) // Skill 1
-        {
-            animator.SetTrigger("Skill1");
-        }
+        //if (Input.GetKeyDown(KeyCode.K)) // Skill 1
+        //{
+        //    animator.SetTrigger("Skill1");
+        //}
 
         if (Input.GetKeyDown(KeyCode.U)) // Combo Attack
         {
             animator.SetTrigger("Combo");
         }
 
-        if (Input.GetKeyDown(KeyCode.L)) // Ban Xa
-        {
-            animator.SetTrigger("Bullet");
-        }
+        //if (Input.GetKeyDown(KeyCode.L)) // Ban Xa
+        //{
+        //    animator.SetTrigger("Bullet");
+        //}
 
         if (Input.GetKeyDown(KeyCode.O)) // Skill 3
         {

@@ -4,9 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - P2
-  - P1
-  - P3
+  - Health1
+  - Rage
+  - Health2
+  - Mana
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
@@ -14,9 +17,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - Test
   - 
+  - Test
+  - P2
   - 
   - 
   - 

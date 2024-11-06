@@ -2057,6 +2057,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 387819695977800392, guid: e635967db410f904396df0c647baed10, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494004084316475646, guid: e635967db410f904396df0c647baed10, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4261449946876721856, guid: e635967db410f904396df0c647baed10, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.62
@@ -2100,6 +2108,14 @@ PrefabInstance:
     - target: {fileID: 4261449946876721917, guid: e635967db410f904396df0c647baed10, type: 3}
       propertyPath: m_Name
       value: Obito 1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4261449946876721917, guid: e635967db410f904396df0c647baed10, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695985006822613348, guid: e635967db410f904396df0c647baed10, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

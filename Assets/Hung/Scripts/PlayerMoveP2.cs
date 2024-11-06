@@ -1,21 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using static PlayerMoves_P1;
 
 public class PlayerMoveP2 : MonoBehaviour
 {
     public float moveSpeed;
     public float jumpForce;
-
+    public PlayerHealth playerHealth;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
 
     Animator animator;
-
+    public CharAndAnimator p1, p2;
+    private List<CharAndAnimator> listPlayer = new List<CharAndAnimator>();
     // Start is called before the first frame update
+    private Image mana1, rage1, healthbar1, mana2, rage2, healthbar2;
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        Canvas canvas1 = GameObject.FindGameObjectWithTag("Health1").GetComponent<Canvas>();
+        Canvas canvas2 = GameObject.FindGameObjectWithTag("Health2").GetComponent<Canvas>();
+        GameObject player1, player2;
+        foreach (GameObject player in players)
+        {
+            if (player.transform.localScale.x > 0)
+            {
+                var active = player.gameObject.GetComponent<PlayerMoveP2>();
+                if(active != null)
+                {
+                    active.enabled = false;
+                }
+                
+                player1 = player;
+                p1 = new CharAndAnimator()
+                {
+                    animator1 = player1.GetComponent<Animator>(),
+                    canvas = canvas1
+                };
+                listPlayer.Add(p1);
+            }
+            else
+            {
+                var active = player.gameObject.GetComponent<PlayerMoves_P1>();
+                if(active != null)
+                {
+                    active.enabled = false;
+                }
+
+                player2 = player;
+                p2 = new CharAndAnimator()
+                {
+                    animator1 = player2.GetComponent<Animator>(),
+                    canvas = canvas2
+                };
+                listPlayer.Add(p2);
+            }
+        }
     }
 
     public void Awake()

@@ -46,7 +46,7 @@ public class PlayersMove_P1 : MonoBehaviour
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+            animator.SetInteger("State",1);
         }
         // Movement to the left
         else if (Input.GetKey(KeyCode.LeftArrow))
@@ -56,7 +56,7 @@ public class PlayersMove_P1 : MonoBehaviour
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
-            animator.SetTrigger("Run");
+            animator.SetInteger("State", 1);
         }
         // Stop moving
         else
@@ -68,7 +68,7 @@ public class PlayersMove_P1 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Keypad1)) // danh thuong
         {
-            animator.SetTrigger("Attack1");
+            animator.SetTrigger("Combo1");
         }
 
         if (Input.GetKeyDown(KeyCode.Keypad5)) // Su dung Ultimate
